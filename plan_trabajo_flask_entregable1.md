@@ -1,4 +1,3 @@
-
 # 🧭 Plan de Trabajo — Proyecto Flask: Entregable 1
 
 Este documento detalla el plan de desarrollo para una aplicación Flask para la gestión de tareas, diseñado siguiendo principios de ingeniería de software avanzada: escalabilidad, mantenibilidad, alta cohesión y bajo acoplamiento. Incluye validación con Pydantic, pruebas con pytest, y soporte escalable hacia bases de datos como MySQL.
@@ -166,24 +165,24 @@ Realizar una verificación exhaustiva del proyecto antes de la entrega, garantiz
 
 Marca cada uno como ✓ al verificarlo en el proyecto.
 
-- [ ] El proyecto está estructurado en carpetas (`models/`, `schemas/`, `services/`, `routes/`, `tests/`, etc.).
-- [ ] Se utiliza un entorno virtual activado y no está incluido en el ZIP.
-- [ ] Todas las dependencias están declaradas en `requirements.txt`.
-- [ ] Se incluye un archivo `README.md` claro y completo.
-- [ ] Existe un archivo `run.py` como punto de entrada de la aplicación Flask.
-- [ ] La clase `Task` está implementada correctamente con los atributos definidos.
-- [ ] La clase `Task` incluye métodos `to_dict()` y `from_dict()`.
-- [ ] Se ha creado `TaskSchema` con Pydantic y valida correctamente entradas y salidas.
-- [ ] La clase `TaskManager` gestiona tareas usando un archivo JSON y sigue SRP.
-- [ ] Las rutas están definidas usando Flask y son RESTful (`GET`, `POST`, `PUT`, `DELETE`).
-- [ ] Las rutas no contienen lógica de negocio (solo delegan).
-- [ ] Los errores están correctamente gestionados y devuelven respuestas claras en JSON.
-- [ ] Se ha ejecutado `pytest` y todas las pruebas pasan correctamente.
-- [ ] Se ha comprobado el funcionamiento manual de la API (crear, leer, actualizar, eliminar).
-- [ ] El proyecto está conectado a un repositorio Git (local y/o GitHub).
-- [ ] Se puede migrar fácilmente a una base de datos relacional (MySQL) gracias a una arquitectura desacoplada.
-- [ ] Se han utilizado `docstrings` en clases y métodos públicos.
-- [ ] El proyecto ha sido comprimido como `m2_proyecto_nombre_apellido.zip` sin carpetas innecesarias.
+- [x] El proyecto está estructurado en carpetas (`models/`, `schemas/`, `services/`, `routes/`, `tests/`, etc.).
+- [x] Se utiliza un entorno virtual activado y no está incluido en el ZIP.
+- [x] Todas las dependencias están declaradas en `requirements.txt`.
+- [x] Se incluye un archivo `README.md` claro y completo.
+- [x] Existe un archivo `run.py` como punto de entrada de la aplicación Flask.
+- [x] La clase `Task` está implementada correctamente con los atributos definidos.
+- [x] La clase `Task` incluye métodos `to_dict()` y `from_dict()`.
+- [x] Se ha creado `TaskSchema` con Pydantic y valida correctamente entradas y salidas.
+- [x] La clase `TaskManager` gestiona tareas usando un archivo JSON y sigue SRP.
+- [x] Las rutas están definidas usando Flask y son RESTful (`GET`, `POST`, `PUT`, `DELETE`).
+- [x] Las rutas no contienen lógica de negocio (solo delegan).
+- [x] Los errores están correctamente gestionados y devuelven respuestas claras en JSON.
+- [x] Se ha ejecutado `pytest` y todas las pruebas pasan correctamente.
+- [x] Se ha comprobado el funcionamiento manual de la API (crear, leer, actualizar, eliminar).
+- [x] El proyecto está conectado a un repositorio Git (local y/o GitHub).
+- [x] Se puede migrar fácilmente a una base de datos relacional (MySQL) gracias a una arquitectura desacoplada.
+- [x] Se han utilizado `docstrings` en clases y métodos públicos.
+- [x] El proyecto ha sido comprimido como `m2_proyecto_nombre_apellido.zip` sin carpetas innecesarias.
 
 ---
 

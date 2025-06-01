@@ -25,7 +25,9 @@ def get_task(task_id):
 def create_task():
     try:
         data = request.get_json()
-        validated = TaskSchema(**data)
+        from app.schemas.task_schema import TaskCreateSchema
+        validated = TaskCreateSchema(**data)
+        # El id se generará automáticamente en TaskManager
         task = Task.from_dict(validated.dict())
         task_manager.create(task)
         return jsonify(task.to_dict()), 201
