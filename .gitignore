@@ -1,2 +1,16 @@
 ___Documentacion_Instrucciones
-venv
+
+# Entorno virtual
+venv/
+ENV/
+env/
+.venv/
+
+# Archivos de Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Otros comunes
+.DS_Store
+*.log

@@ -2,7 +2,7 @@
 Define el esquema de validación TaskSchema usando Pydantic para validar los datos de las tareas.
 """
 
-from pydantic import BaseModel, Field, validator
+from pydantic import BaseModel, Field, field_validator
 from typing import Literal
 
 
@@ -19,7 +19,8 @@ class TaskSchema(BaseModel):
     status: Literal['pendiente', 'en progreso', 'en revisión', 'completada'] = Field(..., description="Estado de la tarea")
     assigned_to: str = Field(..., min_length=1, description="Persona asignada a la tarea")
 
-    @validator('title', 'description', 'assigned_to')
+    @field_validator('title', 'description', 'assigned_to')
+    @classmethod
     def not_empty(cls, v):
         if not v or not v.strip():
             raise ValueError('El campo no puede estar vacío')
