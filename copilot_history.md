@@ -186,6 +186,8 @@ Ahora el código está más modular y preparado para futuras migraciones de back
 
 Quiero mejorar este aspecto  repository = JsonTaskRepository(os.path.abspath(data_path)) para que cuando se implemente la migración a MySQL, no sea necesario cambiar el código de `task_manager.py`, se me ocurre por ejemplo mediante una Interfaz `TaskRepository` que defina los métodos necesarios y luego implementar tanto `JsonTaskRepository` como `MySQLTaskRepository` que hereden de esta interfaz. ¿Qué te parece? ¿Puedes implementarlo?
 
+## Copilot GPT-4.1
+
 Mejoré la arquitectura para que `TaskManager` dependa de la interfaz `ITaskRepository` y no de la implementación concreta (`JsonTaskRepository`). Ahora, para migrar a MySQL solo tendrás que crear un nuevo repositorio que implemente la interfaz, sin modificar el código de `task_manager.py`.
 
 **Cambios realizados:**
@@ -378,7 +380,7 @@ He añadido docstrings detallados a las clases y métodos principales de los sig
 - `app/services/task_manager.py` (clase TaskManager)
 
 Ahora el código está completamente documentado y es mucho más fácil de entender y mantener.  
-¿Quieres que añada docstrings también a los controladores de rutas (`routes.py`) o necesitas alguna otra mejora/documentación?
+¿Necesitas alguna otra mejora/documentación?
 
 ## Carlos
 
